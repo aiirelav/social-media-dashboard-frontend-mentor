@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+</head>
+<body>
+    <div class="background-pattern"></div>
+     <div class = "container">
+     <header>
+       <div>
+       <h2>Social Media Dashboard</h2>
+       <p>Total Followers: 23,004</p>
+       </div>
+       <hr>
+       <div class="mode">
+          <p>Dark Mode</p>
+          <div class="toggle">
+               <input onclick="changeTheme()" type="checkbox" name="toggle-button" id="toggle-button" class="toggle-button">
+          </div>
+       </div>
+     </header>
+     <section class="followers grid">
+        <div class="social" id="facebook">
+           <label class="network">
+             <img alt="social-icon" src="images/icon-facebook.svg">
+             <p>@nathanf</p>
+           </label>
+           <p class="amount-followers"><span>1987</span> followers</p>
+           <label class="auditory-stats">
+             <img alt="auditory-stats" src="images/icon-up.svg">
+             <p class="up">12 Today</p>
+           </label>
+         </div>
+
+         <div class="social" id="twitter">
+           <label class="network">
+             <img alt="social-icon" src="images/icon-twitter.svg">
+             <p>@nathanf</p>
+           </label>
+           <p class="amount-followers"><span>1044</span> followers</p>
+           <label class="auditory-stats">
+             <img alt="auditory-stats" src="images/icon-up.svg">
+             <p class="up">99 Today</p>
+           </label>
+         </div>
+
+         <div class="social" id="instagram">
+           <label class="network">
+             <img alt="social-icon" src="images/icon-instagram.svg">
+             <p>@realnathanf</p>
+           </label>
+           <p class="amount-followers"><span>11k</span> followers</p>
+           <label class="auditory-stats">
+             <img alt="auditory-stats" src="images/icon-up.svg">
+             <p class="up">1099 Today</p>
+           </label>
+         </div>
+
+         <div class="social" id="youtube">
+           <label class="network">
+             <img alt="social-icon" src="images/icon-youtube.svg">
+             <p>Nathan F.</p>
+           </label>
+           <p class="amount-followers"><span>8239</span> followers</p>
+           <label class="auditory-stats">
+             <img alt="auditory-stats" src="images/icon-down.svg">
+             <p class="down">144 Today</p>
+           </label>
+         </div>
+     </section>
+     <section class="stats grid">
+       <h3>Overview - Today</h3>
+
+       <div class="overview">
+           <label class="first-row">
+           <p>Page Views</p>
+           <img src="images/icon-facebook.svg">
+           </label>
+           <label class="second-row">
+           <span>87</span>
+           <label>
+             <img src="images/icon-up.svg">
+             <p class="up">3%</p>
+           </label>
+           </label>
+       </div>
+
+       <div class="overview">
+           <label class="first-row">
+           <p>Likes</p>
+           <img src="images/icon-facebook.svg">
+           </label>
+           <label class="second-row">
+           <span>52</span>
+           <label>
+             <img src="images/icon-down.svg">
+             <p class="down">2%</p>
+           </label>
+           </label>
+       </div>
+
+       <div class="overview">
+           <label class="first-row">
+           <p>Likes</p>
+           <img src="images/icon-instagram.svg">
+           </label>
+           <label class="second-row">
+           <span>5462</span>
+           <label>
+             <img src="images/icon-up.svg">
+             <p class="up">2257%</p>
+           </label>
+           </label>
+       </div>
+
+       <div class="overview">
+           <label class="first-row">
+           <p>Profile Views</p>
+           <img src="images/icon-instagram.svg">
+           </label>
+           <label class="second-row">
+           <span>52k</span>
+           <label>
+             <img src="images/icon-up.svg">
+             <p class="up">1375%</p>
+           </label>
+           </label>
+       </div>
+
+       <div class="overview">
+           <label class="first-row">
+           <p>Retweet</p>
+           <img src="images/icon-twitter.svg">
+           </label>
+           <label class="second-row">
+           <span>117</span>
+           <label>
+             <img src="images/icon-up.svg">
+             <p class="up">330%</p>
+           </label>
+           </label>
+       </div>
+
+        <div class="overview">
+           <label class="first-row">
+           <p>Likes</p>
+           <img src="images/icon-twitter.svg">
+           </label>
+           <label class="second-row">
+           <span>507</span>
+           <label>
+             <img src="images/icon-up.svg">
+             <p class="up">553%</p>
+           </label>
+           </label>
+       </div>
+
+        <div class="overview">
+           <label class="first-row">
+           <p>Likes</p>
+           <img src="images/icon-youtube.svg">
+           </label>
+           <label class="second-row">
+           <span>107</span>
+           <label>
+             <img src="images/icon-down.svg">
+             <p class="down">19%</p>
+           </label>
+           </label>
+       </div>
+
+        <div class="overview">
+           <label class="first-row">
+           <p>Total Views</p>
+           <img src="images/icon-youtube.svg">
+           </label>
+           <label class="second-row">
+           <span>1407</span>
+           <label>
+             <img src="images/icon-down.svg">
+             <p class="down">12%</p>
+           </label>
+           </label>
+       </div>
+     </section>
+   </div>
+</body>
+<script src="js/script.js"></script>
+</html>

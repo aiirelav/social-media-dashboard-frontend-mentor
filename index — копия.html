@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social Media Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    :root {
+      /*Colors*/
+
+      /*Primary*/
+
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --youTube: hsl(348, 97%, 39%);
+
+    /*Dark Theme*/
+
+    --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+    /*Light Theme*/
+
+    --toggle-light: hsl(230, 22%, 74%);
+
+    /*Neutral*/
+
+    /*Dark Theme*/
+
+    --background-color: hsl(230, 17%, 14%); /*backgrdound*/
+    --top-bg-pattern: hsl(232, 19%, 15%);
+    --card-bg: hsl(228, 28%, 20%);
+    --text-color: hsl(228, 34%, 66%);
+    --white: hsl(0, 0%, 100%);
+
+    /*Light Theme*/
+
+    --very-pale-blue: hsl(225, 100%, 98%); /*(Top BG Pattern)*/
+    --light-grayish-blue: hsl(227, 47%, 96%); /*(Card BG)*/
+    --dark-grayish-blue: hsl(228, 12%, 44%); /*text*/
+    --very-dark-blue: hsl(230, 17%, 14%); /*text*/
+    }
+    
+    html {
+      font-family: 'Inter', sans-serif;
+      font-weight: 14px;
+    }
+    
+    body {
+      background-color: var(--background-color);
+      padding: 2rem;
+      margin: 0;
+      color: #fff;
+    }
+    
+    p, img {
+      margin: 0;
+      padding: 0;
+    }
+    .mode {
+      display: flex;
+    }
+    label {
+      display: flex;
+    }
+    img {
+      align-self: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.7rem;
+    }
+    
+   
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% - 4rem);
+      background-color: var(--card-bg);
+      grid-column: 1 / 5;
+      border-radius: 5px;
+      padding: 2rem;
+    }
+
+    hr {
+      height: 1px;
+      background-color: var(--text-color);
+      border: none;
+    }
+    .background-pattern{
+      background-color: var(--top-bg-pattern);
+      height: 240px;
+      width: 100%;
+      border-radius: 0 0 30px 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .amount-followers {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .auditory-type {
+      color: var(--text-color);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .username {
+      color: var(--text-color);
+    }
+
+    img[alt="social-icon"]{
+      margin-right: .5rem;
+    }
+
+    img[alt="auditory-stats"]{
+      margin-right: .3rem;
+    }
+
+    .stats {
+      grid-column: 1 / 5;
+    }
+
+    .facebook {
+      background-color: var(--facebook);
+    }
+    .instagram {
+      background-color: var(--instagram);
+    }
+    .twitter {
+      background-color: var(--twitter);
+    }
+    .youtube {
+      background-color: var(--youtube);
+    }
+
+  </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+     <header>
+       <h1>Social Media Dashboard</h1>
+       <p>Total Followers: 23,004</p>
+       <hr>
+       <div class="mode">
+          <p>Dark Mode</p>
+          <div class="toggle">
+               <input type="checkbox" name="toggle-button" id="toggle-button" class="toggle-button">
+          </div>
+       </div>
+     </header>
+     <section class="followers grid">
+         <div class="social">
+           <label>
+             <img alt="social-icon" src="images/icon-facebook.svg">
+             <p class="username">@nathanf</p>
+           </label>
+           <p class="amount-followers">1987</p>
+           <p class="auditory-type">followers</p>
+           <label>
+             <img alt="auditory-stats" src="images/icon-up.svg">
+             <p>12 Today</p>
+           </label>
+         </div>
+         <div class="social">
+           <label>
+             <img alt="social-icon" src="images/icon-twitter.svg">
+             <p class="username">@nathanf</p>
+           </label>
+           <p class="amount-followers">1044</p>
+           <p class="auditory-type">followers</p>
+           <label>
+             <img alt="auditory-stats" src="images/icon-up.svg">
+             <p>99 Today</p>
+           </label>
+         </div>
+         <div class="social">
+           <label>
+             <img alt="social-icon" src="images/icon-instagram.svg">
+             <p class="username">@realnathanf</p>
+           </label>
+           <p class="amount-followers">1044</p>
+           <p class="auditory-type">followers</p>
+           <label>
+             <img alt="auditory-stats" src="images/icon-up.svg">
+             <p>1099 Today</p>
+           </label>
+         </div>
+         <div class="social">
+            <label>
+             <img alt="social-icon" src="images/icon-youtube.svg">
+             <p class="username">Nathan F.</p>
+           </label>
+           <p class="amount-followers">8239</p>
+           <p class="auditory-type">subscribers</p>
+           <label>
+             <img alt="auditory-stats" src="images/icon-down.svg">
+             <p>144 Today</p>
+           </label>
+         </div>
+     </section>
+     <section class="stats grid">
+       <h2>Overview - Today</h2>
+     </section>
+</body>
+</html>
